@@ -1,0 +1,14 @@
+@use "theme";
+
+main {
+  width: 100vw;
+  max-width: 800px;
+  margin: 42px auto;
+  padding: 0 8px;
+
+  pre,
+  code {
+    color: theme.$secondary;
+    white-space: pre-wrap;
+  }
+}

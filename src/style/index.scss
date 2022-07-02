@@ -1,0 +1,16 @@
+@use "theme";
+@use "reset";
+@use "navbar";
+@use "main";
+@use "footer";
+
+:root {
+  overflow-y: auto;
+  background-color: theme.$background;
+}
+
+* {
+  color-scheme: dark;
+  color: theme.$foreground;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}

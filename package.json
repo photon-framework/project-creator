@@ -1,0 +1,33 @@
+{
+  "name": "photon-app",
+  "repository": "https://github.com/Frank-Mayer/photon-app.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve \"src/**/*.html\" --open",
+    "clean": "yarn clean-linux || yarn clean-windows",
+    "clean-linux": "rm -rf \"./.parcel-cache\" && rm -rf \"./dist\"",
+    "clean-windows": "rmdir /Q/S \"./.parcel-cache\" && rmdir /Q/S \"./dist\"",
+    "build": "parcel build \"src/index.html\" \"src/**/*.html\" \"src/hotlink-io/*\" --no-source-maps --no-cache --public-url \"https://frank-mayer.io/\"",
+    "post-b": "photon \"./dist\""
+  },
+  "browserslist": [
+    "last 5 Android versions",
+    "last 5 Chrome versions",
+    "last 5 ChromeAndroid versions",
+    "last 5 Firefox versions",
+    "last 5 FirefoxAndroid versions",
+    "last 1 Explorer version",
+    "last 5 Opera versions",
+    "last 5 Safari versions",
+    "last 5 iOS versions",
+    "last 5 Samsung versions"
+  ],
+  "dependencies": {
+    "photon-re": "^0.3.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
+    "parcel": "^2.6.2",
+    "photon-cli": "^0.4.3"
+  }
+}

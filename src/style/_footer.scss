@@ -1,0 +1,11 @@
+@use "theme";
+
+footer {
+  padding: 42px 64px;
+  position: sticky;
+  top: 100vh;
+
+  * {
+    color: theme.$foreground;
+  }
+}

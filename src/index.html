@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <link rel="canonical" href="https://frank-mayer.io" />
+    <link rel="shortcut icon" href="./img/favicon.webp" type="image/webp" />
+    <link rel="preload" href="./style/index.scss" as="style" />
+
+    <title>Photon App</title>
+  </head>
+  <body>
+    <nav>
+      <a data-route="/home">Home</a>
+      <a data-route="/templates">Templates</a>
+      <a data-route="/api">API</a>
+    </nav>
+
+    <main
+      photon-router
+      data-content="/content"
+      data-default="/home"
+      data-fallback="/404"
+    ></main>
+
+    <footer>
+      <photon-ref
+        src="./templates/anchor.html"
+        data-href="https://github.com/photon-framework"
+        data-content="source"
+      ></photon-ref>
+    </footer>
+
+    <link rel="stylesheet" href="./style/index.scss" />
+
+    <script
+      defer
+      async
+      type="module"
+      src="../node_modules/photon-re/core.js"
+    ></script>
+  </body>
+</html>
