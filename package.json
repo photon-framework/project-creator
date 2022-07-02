@@ -7,7 +7,7 @@
     "clean": "yarn clean-linux || yarn clean-windows",
     "clean-linux": "rm -rf \"./.parcel-cache\" && rm -rf \"./dist\"",
     "clean-windows": "rmdir /Q/S \"./.parcel-cache\" && rmdir /Q/S \"./dist\"",
-    "build": "parcel build \"src/index.html\" \"src/**/*.html\" \"src/hotlink-io/*\" --no-source-maps --no-cache --public-url \"https://frank-mayer.io/\"",
+    "build": "parcel build \"src/index.html\" \"src/**/*.html\" \"src/hotlink-io/*\" --no-source-maps --no-cache --public-url \"https://photonprojectcreator.web.app/\"",
     "post-b": "photon \"./dist\""
   },
   "browserslist": [
@@ -23,11 +23,16 @@
     "last 5 Samsung versions"
   ],
   "dependencies": {
-    "photon-re": "^0.3.3"
+    "@frank-mayer/magic": "^4.0.0",
+    "@zip.js/zip.js": "^2.4.26",
+    "downloadjs": "^1.4.7",
+    "photon-re": "^0.4.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.6.2",
+    "@types/downloadjs": "^1.4.3",
     "parcel": "^2.6.2",
-    "photon-cli": "^0.4.3"
+    "photon-cli": "^0.4.3",
+    "typescript": "^4.7.4"
   }
 }

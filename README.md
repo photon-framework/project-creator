@@ -11,10 +11,6 @@
 npm i -g yarn
 ```
 
-### Before you build
-
-Replace all occurrences of the exemple domain `frank-mayer.io` with your domain.
-
 ### Install/update dependencies
 
 ```
