@@ -93,6 +93,16 @@ export class ProjectCreator implements Page {
               return { name: name, content: content };
             }
 
+            case "README.md": {
+              return {
+                content: `# ${projectDisplay}
+
+<a href="https://github.com/photon-framework" title="build with photon">Build with <img style="height:1em" src="https://badgen.net/badge/%CE%B3/photon/purple" alt="photon" /></a>
+` as T,
+                name,
+              };
+            }
+
             default:
               return { name, content };
           }
