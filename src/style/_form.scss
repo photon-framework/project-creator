@@ -1,0 +1,63 @@
+@use "theme";
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+input:not([type="submit"]) {
+  background-color: transparent;
+  color: theme.$foreground;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 1px;
+  }
+
+  &:not(:invalid) {
+    &:not(:focus) {
+      border-color: theme.$header;
+    }
+
+    &:focus {
+      border-color: theme.$secondary;
+    }
+  }
+
+  &:invalid {
+    border-color: theme.$error;
+  }
+}
+
+input[type="submit"] {
+  background-image: linear-gradient(
+    theme.$gradientDegree,
+    theme.$purple 0,
+    theme.$cyan 100%
+  );
+  padding: 8px 16px;
+  color: theme.$background;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-size 200ms ease-out, background-position 200ms ease-out;
+  will-change: background-size, background-position;
+
+  &:hover {
+    background-size: 200% 100%;
+    background-position: 50% 0;
+  }
+
+  &:not(:hover) {
+    background-size: 100% 100%;
+    background-position: 0 0;
+  }
+}
+
+label {
+  color: theme.$secondary;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}

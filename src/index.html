@@ -14,25 +14,16 @@
   </head>
   <body>
     <nav>
-      <a data-route="/home">Home</a>
+      <a data-route="/project_creator">Project Creator</a>
       <a data-route="/templates">Templates</a>
-      <a data-route="/api">API</a>
     </nav>
 
     <main
       photon-router
       data-content="/content"
-      data-default="/home"
+      data-default="/project_creator"
       data-fallback="/404"
     ></main>
-
-    <footer>
-      <photon-ref
-        src="./templates/anchor.html"
-        data-href="https://github.com/photon-framework"
-        data-content="source"
-      ></photon-ref>
-    </footer>
 
     <link rel="stylesheet" href="./style/index.scss" />
 

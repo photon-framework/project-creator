@@ -1,0 +1,31 @@
+<h1>Project creator</h1>
+<form>
+  <label
+    title="Regex ^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+  >
+    Project name:
+    <input
+      type="text"
+      name="project_name"
+      placeholder="my-photon-app"
+      value="my-photon-app"
+      pattern="^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+      required
+    />
+  </label>
+  <label>
+    Domain:
+    <input
+      type="url"
+      name="domain"
+      placeholder="https://example.com"
+      value="https://example.com"
+      required
+    />
+  </label>
+  <label>
+    Favicon:
+    <input type="file" name="favicon" accept="image/*" />
+  </label>
+  <input type="submit" value="Create" />
+</form>
