@@ -101,6 +101,23 @@ export class ProjectCreator implements Page {
                     content: `# ${projectDisplay}
 
 <a href="https://github.com/photon-framework" title="build with photon">Build with <img style="height:1em" src="https://badgen.net/badge/%CE%B3/photon/purple" alt="photon" /></a>
+
+## Commands
+
+Start the dev server
+\`\`\`
+yarn dev
+\`\`\`
+
+Build for distribution
+\`\`\`
+yarn build
+\`\`\`
+
+Clean the dist directory
+\`\`\`
+yarn clean
+\`\`\`
 ` as T,
                     name,
                   };
