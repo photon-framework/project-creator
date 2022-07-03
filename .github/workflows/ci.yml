@@ -16,3 +16,9 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: yarn post-b
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHOTONPROJECTCREATOR }}"
+          channelId: live
+          projectId: photonprojectcreator

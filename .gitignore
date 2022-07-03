@@ -4,6 +4,10 @@ package-lock.json
 # Parcel
 .parcel-cache/
 
+# Firebase
+.firebase/
+firebase-debug.log
+
 # Output
 dist/
 
