@@ -2,36 +2,4 @@
 
 <a href="https://github.com/photon-framework" title="build with photon">Build with <img style="height:1em" src="https://badgen.net/badge/%CE%B3/photon/purple" alt="photon" /></a>
 
-### Programms needed
-
-- [node](https://nodejs.org)
-- [yarn](https://www.npmjs.com/package/yarn)
-
-```
-npm i -g yarn
-```
-
-### Install/update dependencies
-
-```
-yarn
-```
-
-### Start development server
-
-```
-yarn dev
-```
-
-### Build website
-
-```
-yarn build
-yarn post-b
-```
-
-### Delete cache and output files
-
-```
-yarn clean
-```
+Create a simple photon project using parameters.
