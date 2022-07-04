@@ -76,7 +76,13 @@ export const downloadRepo = async (
 ) => {
   const baseUrl = `https://api.github.com/repos/${user}/${repository}/contents/`;
 
-  const zipWriter = new zip.ZipWriter(new zip.BlobWriter());
+  const now = new Date();
+
+  const zipWriter = new zip.ZipWriter(new zip.BlobWriter(), {
+    creationDate: now,
+    lastAccessDate: now,
+    level: 9,
+  });
 
   const res = await fetch(baseUrl);
   const data = (await res.json()) as tree;
