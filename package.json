@@ -3,12 +3,11 @@
   "repository": "https://github.com/Frank-Mayer/photon-app.git",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve \"src/**/*.html\" --open",
-    "clean": "yarn clean-linux || yarn clean-windows",
+    "dev": "photon \"./src/\" --serve 12345",
+    "clean": "yarn clean-windows || yarn clean-linux",
     "clean-linux": "rm -rf \"./.parcel-cache\" && rm -rf \"./dist\"",
     "clean-windows": "rmdir /Q/S \"./.parcel-cache\" && rmdir /Q/S \"./dist\"",
-    "build": "parcel build \"src/index.html\" \"src/**/*.html\" \"src/hotlink-io/*\" --no-source-maps --no-cache --public-url \"https://photonprojectcreator.web.app/\"",
-    "post-b": "photon \"./dist\""
+    "build": "photon \"./src/\""
   },
   "browserslist": [
     "last 5 Android versions",
@@ -24,15 +23,13 @@
   ],
   "dependencies": {
     "@frank-mayer/magic": "^4.0.0",
-    "@zip.js/zip.js": "^2.4.26",
+    "@zip.js/zip.js": "^2.5.11",
     "downloadjs": "^1.4.7",
-    "photon-re": "^0.4.1"
+    "photon-re": "^1.0.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.6.2",
     "@types/downloadjs": "^1.4.3",
-    "parcel": "^2.6.2",
-    "photon-cli": "^0.4.3",
+    "photon-cli": "^1.0.1",
     "typescript": "^4.7.4"
   }
 }
