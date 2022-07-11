@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@frank-mayer/magic": "^4.0.0",
-    "@zip.js/zip.js": "^2.5.11",
+    "@zip.js/zip.js": "^2.5.13",
     "downloadjs": "^1.4.7",
     "photon-re": "^1.0.0"
   },
