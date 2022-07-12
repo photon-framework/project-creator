@@ -3,33 +3,21 @@
   "repository": "https://github.com/Frank-Mayer/photon-app.git",
   "license": "MIT",
   "scripts": {
-    "dev": "photon \"./src/\" --serve 12345",
+    "dev": "photon \"./src/\" --serve 12345 --open",
     "clean": "yarn clean-windows || yarn clean-linux",
     "clean-linux": "rm -rf \"./.parcel-cache\" && rm -rf \"./dist\"",
     "clean-windows": "rmdir /Q/S \"./.parcel-cache\" && rmdir /Q/S \"./dist\"",
     "build": "photon \"./src/\""
   },
-  "browserslist": [
-    "last 5 Android versions",
-    "last 5 Chrome versions",
-    "last 5 ChromeAndroid versions",
-    "last 5 Firefox versions",
-    "last 5 FirefoxAndroid versions",
-    "last 1 Explorer version",
-    "last 5 Opera versions",
-    "last 5 Safari versions",
-    "last 5 iOS versions",
-    "last 5 Samsung versions"
-  ],
   "dependencies": {
     "@frank-mayer/magic": "^4.0.0",
-    "@zip.js/zip.js": "^2.5.11",
+    "@zip.js/zip.js": "^2.5.17",
     "downloadjs": "^1.4.7",
-    "photon-re": "^1.0.0"
+    "photon-re": "^1.1.2"
   },
   "devDependencies": {
     "@types/downloadjs": "^1.4.3",
-    "photon-cli": "^1.0.1",
+    "photon-cli": "^1.1.0",
     "typescript": "^4.7.4"
   }
 }

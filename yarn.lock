@@ -1051,10 +1051,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zip.js/zip.js@npm:^2.5.11":
-  version: 2.5.11
-  resolution: "@zip.js/zip.js@npm:2.5.11"
-  checksum: 7b15bf3df315e9de4c2aff85877b2adb642953c43ffceefeab085abbb47bfbd5afe0bda74c55104c06873ab27a09fbbb33e61e401a365f4d10b3bcc079b676f4
+"@zip.js/zip.js@npm:^2.5.17":
+  version: 2.5.17
+  resolution: "@zip.js/zip.js@npm:2.5.17"
+  checksum: 79a1cf7c02e642f2882ca637e1e8302fe809c971fd26980e31d73b3b3ea930202fdd4e6f99269e2fc7f73180dfa1c304b41d6d0e920b01b248f9c3107f48b5f6
   languageName: node
   linkType: hard
 
@@ -1340,9 +1340,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001359":
-  version: 1.0.30001364
-  resolution: "caniuse-lite@npm:1.0.30001364"
-  checksum: 4765640fcc28acfd6f51742f2b315792df09648d3590fedcd1051cb5a5201c70df315aaff9bf29ad41bd1176926ce25d8b3b597c4f5bf6361c1f6c3d29250b15
+  version: 1.0.30001365
+  resolution: "caniuse-lite@npm:1.0.30001365"
+  checksum: 5d043006e9bd9de1ae06c0e12c31997f0ed26f889f47ea6403dc2d08f46a5bd4bf0fe1a5b1099561fc447201ddf13083f277de68829e77fd238ff2af8c05e0a6
   languageName: node
   linkType: hard
 
@@ -1761,9 +1761,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.172":
-  version: 1.4.185
-  resolution: "electron-to-chromium@npm:1.4.185"
-  checksum: 1d079d8a4c4f6a228eeab0023462ce419ce811ed698d91d5ca7cfbf61d9cc5297c7a1ba97d312fda5411d3c9b379d7c0e8af31b14b7c143c0213ce22681b761d
+  version: 1.4.187
+  resolution: "electron-to-chromium@npm:1.4.187"
+  checksum: 258be88d92b3f34ffba8ea1d90ecc918f6aa74954af67d0439a649648a17738dad3042ef3f26be141177f5ffb0c5c90dfcaa18ae4dba7bc2937ff21d64a9acb6
   languageName: node
   linkType: hard
 
@@ -2252,13 +2252,13 @@ __metadata:
   linkType: hard
 
 "image-size@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "image-size@npm:1.0.1"
+  version: 1.0.2
+  resolution: "image-size@npm:1.0.2"
   dependencies:
     queue: 6.0.2
   bin:
     image-size: bin/image-size.js
-  checksum: ffa74672dc7a1b6529c66255adbfe4e7865408004db88ed100855816f03175494ec21ef9dad199b8685b5b194996ebe83ab27803af152adb66a301172fdd622d
+  checksum: 01745fdb47f87cecf538e69c63f9adc5bfab30a345345c2de91105f3afbd1bfcfba1256af02bf3323077b33b0004469a837e077bf0cbb9c907e9c1e9e7547585
   languageName: node
   linkType: hard
 
@@ -3086,17 +3086,17 @@ __metadata:
   dependencies:
     "@frank-mayer/magic": ^4.0.0
     "@types/downloadjs": ^1.4.3
-    "@zip.js/zip.js": ^2.5.11
+    "@zip.js/zip.js": ^2.5.17
     downloadjs: ^1.4.7
-    photon-cli: ^1.0.1
-    photon-re: ^1.0.0
+    photon-cli: ^1.1.0
+    photon-re: ^1.1.2
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
 
-"photon-cli@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "photon-cli@npm:1.0.1"
+"photon-cli@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "photon-cli@npm:1.1.0"
   dependencies:
     "@parcel/config-default": ^2.6.2
     "@parcel/core": ^2.6.2
@@ -3113,13 +3113,13 @@ __metadata:
     try-to-catch: ^3.0.1
   bin:
     photon: index.js
-  checksum: a2e982c686a04039fbe9272b10a0709f384cabecf78cdbe97568a9a1992dfd89bb77543953c52ffe101f412efae5ae32ab9e59a9df659bb76690bb534a4a6234
+  checksum: f33a94776210eb974bb0126620d8c023676f5d3af51daa63df465e7e29df9ae0816622776f93098e72ee5009984502914c2cb695f31c8fbe003e32b33b2285c7
   languageName: node
   linkType: hard
 
-"photon-re@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "photon-re@npm:1.0.0"
+"photon-re@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "photon-re@npm:1.1.2"
   dependencies:
     "@frank-mayer/magic": ^4.0.0
     "@types/mustache": ^4.1.3
@@ -3127,7 +3127,7 @@ __metadata:
     mustache: ^4.2.0
     tslib: ^2.4.0
     xxhash-wasm: ^1.0.1
-  checksum: 895b00c16ef1a72d02fa1278681759c4bdb9406b82d1ca4f0a1a0add2f65d3efa74d6be3a10b1e1d00cd13bec77a8b962f2979384ed0dff6abd83db99a96f936
+  checksum: fe4f8bb953a088ea484e6e7f03d9a141996fc622dd706badcc8b33785289fa02833bdfa956dc18982c3e06d3c3f36beebb7185e830d1b5f7b2759bc44ef9578c
   languageName: node
   linkType: hard
 
