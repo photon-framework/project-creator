@@ -923,7 +923,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-sass@npm:^2.6.2":
+"@parcel/transformer-sass@npm:2.6.2":
   version: 2.6.2
   resolution: "@parcel/transformer-sass@npm:2.6.2"
   dependencies:
@@ -1051,10 +1051,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zip.js/zip.js@npm:^2.5.17":
-  version: 2.5.17
-  resolution: "@zip.js/zip.js@npm:2.5.17"
-  checksum: 79a1cf7c02e642f2882ca637e1e8302fe809c971fd26980e31d73b3b3ea930202fdd4e6f99269e2fc7f73180dfa1c304b41d6d0e920b01b248f9c3107f48b5f6
+"@zip.js/zip.js@npm:^2.5.19":
+  version: 2.5.19
+  resolution: "@zip.js/zip.js@npm:2.5.19"
+  checksum: a06bc6158aca20f3057f7a6ec63c82a04e30201e633ac2dd100e03354c679d515b0923b9a7f5d4873f7767e0010e33b9e4709ab847ed1ffd8c010a9211855cb9
   languageName: node
   linkType: hard
 
@@ -2251,7 +2251,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"image-size@npm:^1.0.1":
+"image-size@npm:^1.0.2":
   version: 1.0.2
   resolution: "image-size@npm:1.0.2"
   dependencies:
@@ -3085,26 +3085,26 @@ __metadata:
   resolution: "photon-app@workspace:."
   dependencies:
     "@frank-mayer/magic": ^4.0.0
+    "@parcel/transformer-sass": 2.6.2
     "@types/downloadjs": ^1.4.3
-    "@zip.js/zip.js": ^2.5.17
+    "@zip.js/zip.js": ^2.5.19
     downloadjs: ^1.4.7
-    photon-cli: ^1.1.0
-    photon-re: ^1.1.2
+    photon-cli: ^1.1.2
+    photon-re: ^1.1.3
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
 
-"photon-cli@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "photon-cli@npm:1.1.0"
+"photon-cli@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "photon-cli@npm:1.1.2"
   dependencies:
     "@parcel/config-default": ^2.6.2
     "@parcel/core": ^2.6.2
-    "@parcel/transformer-sass": ^2.6.2
     cli-color: ^2.0.3
     command-line-args: ^5.2.1
     html-minifier: ^4.0.0
-    image-size: ^1.0.1
+    image-size: ^1.0.2
     jsdom: ^20.0.0
     mustache: ^4.2.0
     open: ^8.4.0
@@ -3113,13 +3113,13 @@ __metadata:
     try-to-catch: ^3.0.1
   bin:
     photon: index.js
-  checksum: f33a94776210eb974bb0126620d8c023676f5d3af51daa63df465e7e29df9ae0816622776f93098e72ee5009984502914c2cb695f31c8fbe003e32b33b2285c7
+  checksum: 8c020a2c22c30aef310e56998f7ed83fc7d061d78a2913eb4fd6f0916b36b4c0785fb9f5a576e52f693cb1dc6f6b8912d89f71a511b87ca099b15dc62d9b076e
   languageName: node
   linkType: hard
 
-"photon-re@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "photon-re@npm:1.1.2"
+"photon-re@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "photon-re@npm:1.1.3"
   dependencies:
     "@frank-mayer/magic": ^4.0.0
     "@types/mustache": ^4.1.3
@@ -3127,7 +3127,7 @@ __metadata:
     mustache: ^4.2.0
     tslib: ^2.4.0
     xxhash-wasm: ^1.0.1
-  checksum: fe4f8bb953a088ea484e6e7f03d9a141996fc622dd706badcc8b33785289fa02833bdfa956dc18982c3e06d3c3f36beebb7185e830d1b5f7b2759bc44ef9578c
+  checksum: 11d60259f4d7b7db4d733de4d34ed2ae8bd9ca3a549ce8f995baf867bd467a7bff5d9d5c7da5fac33a986bf4d1c9bb71fb3a321e5bc017d0f1b64a8cdbca1fe5
   languageName: node
   linkType: hard
 

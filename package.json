@@ -11,13 +11,14 @@
   },
   "dependencies": {
     "@frank-mayer/magic": "^4.0.0",
-    "@zip.js/zip.js": "^2.5.17",
+    "@zip.js/zip.js": "^2.5.19",
     "downloadjs": "^1.4.7",
-    "photon-re": "^1.1.2"
+    "photon-re": "^1.1.3"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
     "@types/downloadjs": "^1.4.3",
-    "photon-cli": "^1.1.0",
+    "photon-cli": "^1.1.2",
     "typescript": "^4.7.4"
   }
 }
