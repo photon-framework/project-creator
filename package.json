@@ -1,6 +1,6 @@
 {
-  "name": "photon-app",
-  "repository": "https://github.com/Frank-Mayer/photon-app.git",
+  "name": "project-creator",
+  "repository": "https://github.com/photon-framework/project-creator.git",
   "license": "MIT",
   "scripts": {
     "dev": "photon \"./src/\" --serve 12345 --open",
