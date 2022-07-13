@@ -102,21 +102,28 @@ export class routes {
 
 <a href="https://github.com/photon-framework" title="build with photon">Build with <img style="height:1em" src="https://badgen.net/badge/%CE%B3/photon/purple" alt="photon" /></a>
 
+[Node](https://nodejs.org) is needed to build this project.
+
 ## Commands
+
+Install dependencies
+\`\`\`
+npm install
+\`\`\`
 
 Start the dev server
 \`\`\`
-yarn dev
+npm run dev
 \`\`\`
 
 Build for distribution
 \`\`\`
-yarn build
+npm run build
 \`\`\`
 
 Clean the dist directory
 \`\`\`
-yarn clean
+npm run clean
 \`\`\`
 ` as T,
                     name,
