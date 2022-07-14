@@ -7,8 +7,6 @@ import { extname } from "@frank-mayer/magic";
 export class routes {
   @page("/project_creator")
   projectCreator(): void {
-    console.debug("project creator");
-
     const forms = document.getElementsByTagName("form");
     if (forms.length > 0) {
       const formEl = forms[0]!;
