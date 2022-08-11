@@ -1,5 +1,5 @@
-# npm lock file
-package-lock.json
+# package manager lock file
+bun.lockb
 
 # Parcel
 .parcel-cache/

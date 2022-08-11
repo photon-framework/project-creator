@@ -145,7 +145,8 @@ npm run clean
           }
         )
           .then((x) => {
-            x.close()
+            x.archive()
+              .blob()
               .then((b) => {
                 download(b, `${projectName}.zip`, "application/zip");
                 resolve();

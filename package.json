@@ -3,22 +3,21 @@
   "repository": "https://github.com/photon-framework/project-creator.git",
   "license": "MIT",
   "scripts": {
-    "dev": "photon \"./src/\" --serve 12345 --open",
-    "clean": "yarn clean-windows || yarn clean-linux",
-    "clean-linux": "rm -rf \"./.parcel-cache\" && rm -rf \"./dist\"",
-    "clean-windows": "rmdir /Q/S \"./.parcel-cache\" && rmdir /Q/S \"./dist\"",
-    "build": "photon \"./src/\""
+    "dev": "photon ./src/ --serve 12345 --open",
+    "clean": "bun clean-windows || bun clean-linux",
+    "clean-linux": "rm -rf ./.photon-cache && rm -rf ./dist",
+    "clean-windows": "rmdir /Q/S ./.photon-cache && rmdir /Q/S ./dist",
+    "build": "photon ./src/"
   },
   "dependencies": {
-    "@frank-mayer/magic": "^4.0.0",
-    "@zip.js/zip.js": "^2.5.19",
+    "@frank-mayer/magic": "^4.0.2",
+    "client-zip": "^2.2.2",
     "downloadjs": "^1.4.7",
     "photon-re": "^1.1.5"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.6.2",
     "@types/downloadjs": "^1.4.3",
-    "photon-cli": "^1.1.2",
+    "photon-cli": "^1.2.3",
     "typescript": "^4.7.4"
   }
 }

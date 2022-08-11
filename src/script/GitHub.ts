@@ -1,5 +1,38 @@
-import * as zip from "@zip.js/zip.js";
+import { downloadZip } from "client-zip";
+import type {
+  InputWithMeta,
+  InputWithSizeMeta,
+  InputWithoutMeta,
+} from "client-zip";
 import { basename, dirname, extname, join } from "@frank-mayer/magic/Path";
+
+class FileCollector<
+  T extends InputWithMeta | InputWithSizeMeta | InputWithoutMeta =
+    | InputWithMeta
+    | InputWithSizeMeta
+    | InputWithoutMeta
+> implements AsyncIterable<T>, Iterable<T>
+{
+  private readonly bucket = new Array<T>();
+
+  public add(file: T): void {
+    this.bucket.push(file);
+  }
+
+  public async *[Symbol.asyncIterator](): AsyncIterator<T, any, undefined> {
+    for await (const el of this.bucket) {
+      yield el;
+    }
+  }
+
+  public [Symbol.iterator](): Iterator<T> {
+    return this.bucket[Symbol.iterator]();
+  }
+
+  public archive() {
+    return downloadZip(this);
+  }
+}
 
 type fileProcessor = <T extends string | Blob>(
   name: string,
@@ -15,21 +48,27 @@ type tree = Array<{
 }>;
 
 const processFile = (
-  zipWriter: zip.ZipWriter<Blob>,
+  zipWriter: FileCollector,
   name: string,
   content: string | Blob
-) =>
-  zipWriter.add(
-    name,
-    new zip.BlobReader(
-      typeof content === "string"
-        ? new Blob([content], { type: "text/plain" })
-        : content
-    )
-  );
+) => {
+  if (typeof content === "string") {
+    zipWriter.add(
+      new File([content], name, {
+        type: "text/plain",
+      })
+    );
+  } else {
+    zipWriter.add(
+      new File([content], name, {
+        type: content.type,
+      })
+    );
+  }
+};
 
 const processFolder = async (
-  zipWriter: zip.ZipWriter<Blob>,
+  zipWriter: FileCollector,
   baseUrl: string,
   data: tree | { tree: tree },
   fileProcessor: fileProcessor
@@ -76,17 +115,11 @@ export const downloadRepo = async (
 ) => {
   const baseUrl = `https://api.github.com/repos/${user}/${repository}/contents/`;
 
-  const now = new Date();
-
-  const zipWriter = new zip.ZipWriter(new zip.BlobWriter(), {
-    creationDate: now,
-    lastAccessDate: now,
-    level: 9,
-  });
+  const fileCollector = new FileCollector();
 
   const res = await fetch(baseUrl);
   const data = (await res.json()) as tree;
 
-  await processFolder(zipWriter, baseUrl, data, fileProcessor);
-  return zipWriter;
+  await processFolder(fileCollector, baseUrl, data, fileProcessor);
+  return fileCollector;
 };
