@@ -100,26 +100,48 @@ export class routes {
 
 <a href="https://github.com/photon-framework" title="build with photon">Build with <img style="height:1em" src="https://badgen.net/badge/%CE%B3/photon/purple" alt="photon" /></a>
 
-[Node](https://nodejs.org) is needed to build this project.
+[Bun](https://bun.sh) is recommended to build this project.
+
+*(You could also use [Node](https://nodejs.org), then change \`bun\` in the scripts section of package.json to \`npm\`)*
 
 ## Commands
 
 Install dependencies
+
+\`\`\`
+bun install
+\`\`\`
+
 \`\`\`
 npm install
 \`\`\`
 
 Start the dev server
+
+\`\`\`
+bun run dev
+\`\`\`
+
 \`\`\`
 npm run dev
 \`\`\`
 
 Build for distribution
+
+\`\`\`
+bun run build
+\`\`\`
+
 \`\`\`
 npm run build
 \`\`\`
 
 Clean the dist directory
+
+\`\`\`
+bun run clean
+\`\`\`
+
 \`\`\`
 npm run clean
 \`\`\`
